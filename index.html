@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindful Moments</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Mindful Moments</h1>
+      <p class="subtitle">Take a pause, breathe deeply, and reset your day.</p>
+    </header>
+
+    <section class="card" aria-labelledby="breathing-title">
+      <h2 id="breathing-title">Guided Breathing</h2>
+      <p>Follow the circle: inhale, hold, exhale.</p>
+      <div class="breathing-wrap">
+        <div id="breathing-circle" class="circle">Ready</div>
+      </div>
+      <button id="breathing-btn" class="btn">Start 1-Minute Exercise</button>
+    </section>
+
+    <section class="card" aria-labelledby="quote-title">
+      <h2 id="quote-title">Daily Intention</h2>
+      <blockquote id="quote">"Wherever you are, be there totally."</blockquote>
+      <button id="quote-btn" class="btn btn-secondary">New Reflection</button>
+    </section>
+
+    <section class="card" aria-labelledby="gratitude-title">
+      <h2 id="gratitude-title">Gratitude Journal</h2>
+      <form id="gratitude-form">
+        <label for="gratitude-input">One thing you appreciate right now:</label>
+        <div class="input-row">
+          <input id="gratitude-input" type="text" maxlength="120" placeholder="I am grateful for..." required />
+          <button class="btn" type="submit">Save</button>
+        </div>
+      </form>
+      <ul id="gratitude-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
